@@ -1,4 +1,4 @@
-hab_number,hab_Type,latitude,longitude,num_plastics_m2,num_fibers_m2,num_shards_m2,mg_plastic_m2,SOM,soil_moisture,stem_count,perc_cover,bulk_density_dry,bulk_density_wet
+hab_number,hab_Type,latitude,longitude,num_plastics_m2,num_fragments_m2,num_shards_m2,mg_plastic_m2,SOM,soil_moisture,stem_count,perc_cover,bulk_density_dry,bulk_density_wet
 1,Mudflat,38.91089349,-76.94828376,22508,20888,1621,43.21,0.0424,23.27,0,0,1.11,1.44
 2,Mudflat,38.91110298,-76.9483193,39021,37906,1115,13.01,0.0721,51.55,0,0,0.72,1.49
 3,Mudflat,38.91110141,-76.94843698,15199,13423,1777,29.61,0.0857,49.68,0,0,0.79,1.58
