@@ -1,6 +1,6 @@
 ## Microplastic summary statistics ##
-### Created by Ryan Helcoski, 2_19_2019 - 5_1_2019      ###
-### Statistical analyses for creating tables 1,2,3      ###
+### Created by Ryan Helcoski,  6_29_2019      ###
+### Statistical analyses for creating tables 1,2,3  and SI 1    ###
 
 ##### Load packages ###
 
@@ -25,7 +25,7 @@ outpath <- " "
 
 ##### seperate data for easier analysis
 #remove columns from master data for individual habitat types
-m3 <- m2[ -c(1:4, 9, 11, 15)]
+m3 <- m2[ -c(1:4, 16)]
 
 #Create individual data frame for each habitat for easier analysis
 #debris line
@@ -216,12 +216,12 @@ write.csv(cld_plastic, file=outpath)
 
 #### Table 3, correlation of everything vs everything ####
 # must go back to m2, in order to create m4 that includes microplastics per kg
-m4 <- m2[ -c(1:4, 11, 15)]
+m4 <- m2[ -c(1:4, 12, 16)]
 mycor <- rcorr(as.matrix(m4), type="pearson")
 m_r <- mycor$r
-correlation_r <- m_r [-c(6:9), -c(1:5)]
+correlation_r <- m_r [-c(7:10), -c(1:6)]
 m_P <- mycor$P
-correlation_P <- m_P [-c(6:9), -c(1:5)]
+correlation_P <- m_P [-c(7:10), -c(1:6)]
 
 #export tables
 write.csv(correlation_r, file=outpath)
