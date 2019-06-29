@@ -17,7 +17,7 @@ library(multcompView)
 
 ##### Load data ###
 #change the green text to your input location. Make sure you have the raw data master file provided on github
-m2 <- read.csv("C:/Users/hp/Desktop/Years/2018_Feb/Micro/Micro_Final/analysis/Microplastic_data.csv")
+m2 <- read.csv("/Microplastic_data.csv")
 
 ##### set_outpath ###
 # use the space between the quotations to write up the location you want your data exported to
